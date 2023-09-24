@@ -1,0 +1,15 @@
+.blue{
+    background-color: blue;
+    border-radius: 10px;
+    border:1px solid blue  ;
+    color: white;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+}
+.inp{
+    border-radius: 20px;
+    height: 20px;
+    margin-top: 10px;
+}

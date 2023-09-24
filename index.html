@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+  
+
+
+<div class="cont">
+<div>
+    <p id="Shelf" style="padding: 2%;">My book shelf</p>
+
+    <p id="amount" style="padding: 2%;">Total amount of books</p>
+    <button class="blue"  onclick="AlertUnRead()">alert number of unread books</button>
+    <button class="blue"  onclick="AlertFav()">alert number of fav books</button>
+</div>
+
+<div style="margin-left: 8%;">
+    <h3 id="NewBookText">New book</h3>
+</div>
+</div>
+
+<div class="cont" style="margin-top: 10%;">
+
+    <div id="bookInfoCont" style="display: flex; flex-direction: column;">
+    <div class="cont" id="bookInfo" style="display: none;">
+
+        
+        <p  style="padding: 2%;"></p>
+    
+        <div style="display: flex; flex-direction: column;">
+        <button class="blue" style="padding: 6%; margin-top: 3%;">toogle favorite</button>
+        <button class="blue"  style="padding: 6%;  margin-top: 3%;">toogle is read</button>
+        <button class="blue"  style="padding: 6%;  margin-top: 3%;">remove from shelf</button>
+        
+    </div>
+    </div>
+    
+</div>
+    <div style="margin-left: 8%; display: flex; flex-direction: column;">
+        <input type="text" class="inp" id="titleInp" placeholder="title"/>
+        <input type="text" class="inp" id="authorsInp" placeholder="authors"/>
+        <input type="text" class="inp" id="PageNumInp" placeholder="number of pages"/>
+
+        <button class="blue" onclick="Add()"  style="padding: 6%;  margin-top: 3%;">Add book</button>
+    </div>
+
+</div>
+
+
+
+
+
+    <script src="scripts/taskBooks.js"></script>
+</body>
+</html>
